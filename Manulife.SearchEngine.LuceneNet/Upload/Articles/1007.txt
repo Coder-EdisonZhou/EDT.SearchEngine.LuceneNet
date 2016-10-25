@@ -1,0 +1,202 @@
+    快速搜索   
+[登录] [注册] 
+
+论坛
+标签
+会员
+搜索
+帮助 
+Discuz!NT » 传智播客 » 如鹏时代 » 某网络专业人士笔记(1) 
+传智播客
+灌水区
+如鹏时代
+IT天下
+视频专区
+C#视频
+C语言视频
+
+某网络专业人士笔记(1) 
+[ 10 查看 / 0 回复 ]
+返回列表 
+  
+    
+发送短消息 
+UID
+1 
+精华
+0 
+威望
+-80 
+金钱
+-80 元 
+查看公共资料 搜索帖子 admin 
+ 
+admin
+组别管理员 
+性别 
+积分1629 
+帖子1708 
+注册时间 2010-06-25 
+admin  2010-06-26 00:04 |只看楼主 1# 
+字体大小: t T 
+某网络专业人士笔记(1)
+
+
+1章 故障处理方法 
+
+　　一、网络的复杂性 
+　　一般网络包括路由、拨号、交换、视频、WAN（ISDN、帧中继、ATM、…）、LAN、VLAN、… 
+
+　　二、故障处理模型 
+　　1、 界定问题（Define the Problem） 
+　　详细而精确地描述故障的症状和潜在的原因 
+　　2、 收集详细信息（Gather Facts）R>信息来源：关键用户、网络管理系统、路由器/交换机 
+　　1） 识别症状： 
+　　2） 重现故障：校验故障依然存在 
+　　3） 调查故障频率： 
+　　4） 确定故障的范围：有三种方法建立故障范围 
+　　? 由外到内故障处理（Outside-In Troubleshooting）：通常适用于有多个主机不能连接到一台服务器或服务器集 
+　　? 由内到外故障处理（Inside-Out Troubleshooting）： 
+　　? 半分故障处理（Divide-by-Half Troubleshooting） 
+　　3、 考虑可能情形（Consider Possibilities）考虑引起故障的可能原因 
+　　4、 建立一份行动计划（Create the Action Plan） 
+　　5、 部署行动计划（Implement the Action Plan） 
+　　用于纠正网络故障原因。从最象故障源处，想出处理方法每完成一个步骤，检查故障是否解决 
+　　6、 观察行动计划执行结果（Observe Results） 
+　　7、 如有行动计划不能解决问题，重复上述过程（Iterate as Needed） 
+
+　　三、记录所做修改 
+　　在通过行动计划解决问题后，建议把记录作为故障处理的一部分，记录所有的配置修改。
+第2章 网络文档 
+
+　　一、网络基线 
+　　解决网络问题的最简单途径是把当前配置和以前的配置相比较。 
+　　基线文档由不同的网络和系统文档组成，它包括： 
+　　? 网络配置表 
+　　? 网络拓扑图 
+　　? ES网络配置表 
+　　? ES网络拓扑图 
+　　创建网络的注意事项： 
+　　1） 确定文档覆盖的范围； 
+　　2） 保持一致：收集网络中所有设备的相同信息； 
+　　3） 明确目标：了解文档的用途； 
+　　4） 文档易于使用和访问； 
+　　5） 及时维护更新文档。 
+
+　　二、网络配置表 
+　　网络配置表的通常目标是提供网络中使用的硬件和软件组成的列表，其组成有： 
+　　分级 项目 
+　　杂项信息 设备名、设备型号、CPU类型、FLASH、DRAM、接口描述、用户名口令 
+　　第1层 介质类型、速率、双工模式、接口号、连接插座或端口 
+　　第2层 MAC地址、STP状态、STP根桥、速端口信息、VLAN、Etherchannel配置、封装、中继状态、接口类型、端口安全、VTP状态、VTP模式 
+　　第3层 IP地址、IPX地址、HSRP地址、子网掩码、路由协议、ACL、隧道信息、环路接口 
+　　在多数情形下，存储这些信息的最佳方式是电子表格或数据库，电子表格用于较小的网络，数据库用于较大的网络。
+
+　　三、网络拓扑图 
+　　网络拓扑图是图示网络的各组成部分之间如何在逻辑上和物理上相互连接。 
+　　1、网络拓扑图的组成 
+　　分级 项目 
+　　杂项信息 设备名、设备型号、设置间连接、接口描述 
+　　第1层 介质类型、接口号 
+　　第2层 MAC地址、VLAN、封装、中继状态、接口类型、DLCI 
+　　第3层 IP地址、子网掩码、路由协议 
+　　对于大型的网络，可以制作多个网络拓扑图，每个网络拓扑图反映一个分离的部分。 
+　　2、建立网络拓扑图 
+
+　　四、发现网络配置信息 
+　　1、收集路由器和第3层交换机网络配置信息 
+　　show version ；显示设备型号、Flash、DRAM、IOS版本 
+　　show ip interface brief ；显示接口简要信息（类型、状态、协议状态、IP地址） 
+　　show interface e0/0 ；显示某接口详细信息（MAC、IP、MASK、…） 
+　　show ip protocols ；显示IP路由协议信息 
+　　show ip interface e0/0 ；显示接口的IP协议信息（状态、IP地址、ACL、…） 
+　　2、收集交换机配置信息 
+　　交换机网络配置表包含的信息：设备名、型号、位置、Flash、DRAM、CATOS版本、管理地址、VTP域、VTP模式、端口号、端口速率、端口双工、VLAN、STP状态、速端口状态、中继状态、… 
+　　show version ；显示IOS或CATOS版本、DRAM、Flash 
+　　show vtp domain ；（CatOS）显示VTP域和VTP模式 
+　　show vtp status ；（IOS） 
+　　show interface ；（CatOS）显示管理接口信息 
+　　show port ；（CatOS）显示每个端口的简要信息（号、VLAN、双工、…） 
+　　show interface ；（IOS） 
+　　show trunk ；（CatOS）显示中继信息（模式、封装、允许端口、剪裁、…） 
+　　show interface trunk ；（IOS） 
+　　show spantree 45 ；（CatOS）显示端口的STP模式、类型、状态、速端口、…） 
+　　show spanning-tree 45 ；（IOS） 
+　　3、发现相邻CISCO设备的信息 
+　　CDP（Cisco Discovery Protocol）是CISCO的专用协议，用于识别直接相邻的CISCO设备信息，CDP工作在第2层。 
+　　Show cdp neighbor ；显示相邻CISCO设备的简要信息（ID、相邻接口、平台、…） 
+　　Show cdp neighbor detail；显示相邻CISCO设备的详细信息（包含第3层信息） 
+
+　　五、创建网络文档的过程 
+　　1、 LOGIN ；登录到设备进入特权模式。 
+　　2、 接口发现 ；发现关于设备的所需信息 
+　　3、 Document ；在网络配置表中记录发现的信息。 
+　　4、 Diagram ；从网络配置表传输所需信息到网络拓扑图 
+　　5、 设备发现 ；判断是否有相邻设备没有记录文档。
+第3章 ES文档和故障处理 
+
+　　一、ES网络配置表 
+　　ES网络配置表是ES的硬件和软件组成的列表。ES网络配置常包括以下项目： 
+　　分级 项目 
+　　杂项信息 系统名、系统厂商/型号、CPU速率、RAM、存储器、系统功能 
+　　第1、2层 介质类型、接口速率、VLAN、MAC、网络接头 
+　　第3层 IP地址、缺省网关、子网掩码、WINS、DNS、 
+　　第7层 操作系统（版本）、基于网络的应用程序、高带宽应用程序、低延时应用程序、特定考虑 
+
+　　二、ES网络拓扑图 
+　　ES网络拓扑图的典型项目有：系统名、网络连接、物理位置、系统目标、VLAN、IP地址、子网掩码、操作系统、网络应用程序 
+　　大多数ES网络拓扑图都建立在网络拓扑图中，其中还可加入ES网络配置表数据的子集。
+
+　　三、收集ES网络配置信息 
+　　通用命令： 
+　　1） ping host/ip-address ；发送和接收ICMP响应，校验网络的连通性 
+　　2） arp -a ；查看修改ES的MAC-IP映射表（同一子网） 
+　　3） telnet host/ip-address ；登录远程ES或特定TCP端口 
+　　Windows平台命令 
+　　1） ipconfig /all ；查看修改ES的IP信息（适用所有Windows平台） 
+　　2） winipcfg ；查看修改ES的IP信息（仅适用于Win9x平台） 
+　　3） tracert host/ip-address ；校验到主机的连接并显示路径上的设备IP 
+　　4） route print ；显示本设备IP路由表的内容 
+　　5） netstat ；显示当前网络连接 
+　　Unix、Linux和Mac OS系统命令 
+　　1） ifconfig -a ；查看UNIX和MAC主机的IP信息 
+　　2） traceroute host/ip ； 
+　　3） route –n ； 
+　　4） cat /etc/resolv.conf ；查看DNS服务器信息 
+
+　　四、通用的故障处理过程 
+　　1、通用的故障处理过程： 
+　　l 收集症状：收集网络、用户、ES的症状 
+　　1） 分析现存症状 
+　　2） 判断所属 
+　　3） 窄化范围 
+　　4） 判定症状 
+　　5） 记录症状 
+　　l 分离问题 
+　　1） Bottom-Up troubleshooti 
+引用 TOP 
+
+
+返回列表 
+上一主题 | 下一主题
+
+发新主题 
+传智播客
+灌水区
+如鹏时代
+IT天下
+视频专区
+C#视频
+C语言视频
+
+Discuz!NT - Discuz!NT - 统计 -  Sitemap 
+Comsenz Technology Ltd - 简洁版本 - 界面风格 
+Default 
+- TOP 
+ 
+Powered by Discuz!NT 3.0.0 © 2001-2010 Comsenz Inc. 
+Processed in 0.015625 second(s) , 3 queries. 
+帖子标题 
+作者 
+ 
+我的资料 

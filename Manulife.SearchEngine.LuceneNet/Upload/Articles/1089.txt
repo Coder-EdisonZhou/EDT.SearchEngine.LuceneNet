@@ -1,0 +1,158 @@
+    快速搜索   
+[登录] [注册] 
+
+论坛
+标签
+会员
+搜索
+帮助 
+Discuz!NT » 传智播客 » 如鹏时代 » 请教写优化大师遇到的问题 
+传智播客
+灌水区
+如鹏时代
+IT天下
+视频专区
+C#视频
+C语言视频
+
+请教写优化大师遇到的问题 
+[ 9 查看 / 0 回复 ]
+返回列表 
+  
+    
+发送短消息 
+UID
+1 
+精华
+0 
+威望
+-80 
+金钱
+-80 元 
+查看公共资料 搜索帖子 admin 
+ 
+admin
+组别管理员 
+性别 
+积分1629 
+帖子1708 
+注册时间 2010-06-25 
+admin  2010-06-26 00:14 |只看楼主 1# 
+字体大小: t T 
+请教写优化大师遇到的问题
+
+
+卡这一天了，就是不知道错那了！c参考了论坛上的代码，还是看不出错误！
+请杨老师和以前写过的站友帮我一把，先谢谢了！
+问题是（关键语句已标出）：
+1.用ComboBox结果可以正常的显示在空间中，换成ListBox就不可以了
+2.输出的硬盘的总大小很大（不正常），其他的两项是0,（如C： 固定硬盘    0G    456464564G      0G）
+3.输出的转义字符不能正常的运行
+DWORD driver=GetLogicalDrives();//获取磁盘符号
+TCHAR drivers[256];
+itoa(driver,drivers,2);
+int i; 
+int j=0; 
+int b=0;  
+TCHAR diskfu[30]="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+TCHAR diskfu1[30];
+i=strlen(drivers)-1; 
+for(;i>=0;i--) 
+{ if(drivers=='1')
+  {  fu1=fu[j];
+      b++;
+    }
+    
+      j++;
+    
+  }
+        fu1='\0'
+
+char buf[1024];                //实现判断分区的有关的情况
+ZeroMemory(buf,1024);
+wsprintf(buf,TEXT("分区\t磁盘类型\t可用空间\t分区空间\t空闲空间\t\n"));  
+    SendDlgItemMessage(hwnd,IDC_CBODRIVERS,CB_ADDSTRING,0,(LPARAM)buf);
+        for(i=0;i        {      TCHAR drivers[2];      
+        drivers[0]=fu1;
+                drivers[1]=':';
+        drivers[2]='\0';  
+        UINT t = GetDriveType(drivers); 
+  TCHAR type[256];
+  ZeroMemory(type,256);              
+                switch (t)
+              {
+                  case DRIVE_UNKNOWN:                
+                    wsprintf(type,TEXT("未知磁盘类型"));
+                    break;
+                  case DRIVE_NO_ROOT_DIR:
+                    wsprintf(type,TEXT("磁盘名无效"));
+                    break;
+                  case DRIVE_REMOVABLE:
+                  
+                  wsprintf(type,TEXT("可移动磁盘"));    
+                  break;
+                case DRIVE_FIXED:                
+                    wsprintf(type,TEXT("固定磁盘"));                
+                    break;
+                case DRIVE_REMOTE:
+                  wsprintf(type,TEXT("网络磁盘"));
+                  break;
+                case DRIVE_CDROM:
+                  wsprintf(type,TEXT("光驱"));
+                  break;
+                case DRIVE_RAMDISK:
+                  wsprintf(type,TEXT("RAM"));
+                  break;
+                default:
+                  wsprintf(type,TEXT("返回值非法"));
+                        }                    
+        ULARGE_INTEGER nFreeBytesAvailable;
+        ULARGE_INTEGER nTotalNumberOfBytes;
+        ULARGE_INTEGER nTotalNumberOfFreeBytes;
+        TCHAR  chBuf[256];
+        if (GetDiskFreeSpaceEx(drivers,  //计算磁盘的大小
+            &nFreeBytesAvailable,
+            &nTotalNumberOfBytes,
+            &nTotalNumberOfFreeBytes))
+        {    
+          2    wsprintf(chBuf,"%fG\t%fG\t%fG\t",  (这里的f被原样输出了，而且大小分别是  0G    465464564G        0G)
+                  (float)(nFreeBytesAvailable.HighPart*4+(float)(nFreeBytesAvailable.LowPart)/(1024*1024*1024)),
+                  (float)(nTotalNumberOfBytes.HighPart*4+(float)(nTotalNumberOfBytes.LowPart)/(1024*1024*1024)),
+                  (float)(nTotalNumberOfFreeBytes.HighPart*4+(float)(nTotalNumberOfFreeBytes.LowPart)/(1024*1024*1024)));
+            
+        }    
+        else
+            {  wsprintf(chBuf,"0G \t0G\t0G\t");
+            }
+        TCHAR buf2[256];
+wsprintf(buf2,TEXT("%c:\t%s\t%s\t"),fu1,type,chBuf);
+1.3 SendDlgItemMessage(hwnd,IDC_CBODRIVERS,CB_ADDSTRING,0,(LPARAM)buf2);
+  
+            }}
+} 
+引用 TOP 
+
+
+返回列表 
+上一主题 | 下一主题
+
+发新主题 
+传智播客
+灌水区
+如鹏时代
+IT天下
+视频专区
+C#视频
+C语言视频
+
+Discuz!NT - Discuz!NT - 统计 -  Sitemap 
+Comsenz Technology Ltd - 简洁版本 - 界面风格 
+Default 
+- TOP 
+ 
+Powered by Discuz!NT 3.0.0 © 2001-2010 Comsenz Inc. 
+Processed in 0.015625 second(s) , 3 queries. 
+帖子标题 
+作者 
+ 
+我的资料 

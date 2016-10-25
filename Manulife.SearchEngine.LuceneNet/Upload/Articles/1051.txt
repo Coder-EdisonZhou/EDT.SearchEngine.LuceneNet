@@ -1,0 +1,131 @@
+    快速搜索   
+[登录] [注册] 
+
+论坛
+标签
+会员
+搜索
+帮助 
+Discuz!NT » 传智播客 » 如鹏时代 » 【求救】C 
+传智播客
+灌水区
+如鹏时代
+IT天下
+视频专区
+C#视频
+C语言视频
+
+【求救】C 
+[ 9 查看 / 0 回复 ]
+返回列表 
+  
+    
+发送短消息 
+UID
+1 
+精华
+0 
+威望
+-80 
+金钱
+-80 元 
+查看公共资料 搜索帖子 admin 
+ 
+admin
+组别管理员 
+性别 
+积分1629 
+帖子1708 
+注册时间 2010-06-25 
+admin  2010-06-26 00:10 |只看楼主 1# 
+字体大小: t T 
+【求救】C-Free网络编程的问题
+
+
+我写了个基于UDP网络客户端的程序。为什么再c-free中运行不了。可以再VC中运行。
+在VC中我要加入ws2_32.lib文件到库中。我再C-FREE中也加入了。不行。
+后来我百度到有别人采用#pragma comment (lib,"ws2_32.lib") 的方式加入。但是还是说
+我用到的SOCKET网络编程函数没有声明。是不是还加什么东西，才可以啊。困扰我很久了。
+谢谢！ 。下面是我的程序。有点长不好意思啊。
+
+#include 
+#include 
+#include 
+#pragma comment (lib,"ws2_32.lib") 
+int    main ()
+{
+    WORD wVersionRequested;
+    WSADATA wsaData;
+      int err;
+
+      wVersionRequested = MAKEWORD( 1, 1 );
+
+      err = WSAStartup( wVersionRequested, &wsaData );
+      if ( err != 0 ) 
+    {
+            return 0;
+    }
+
+    if ( LOBYTE( wsaData.wVersion ) != 1 ||
+        HIBYTE( wsaData.wVersion ) != 1 )
+    {
+        WSACleanup( );
+        return 0; 
+      }
+    SOCKET sockSrv = socket(AF_INET,SOCK_DGRAM,0);
+    SOCKADDR_IN addrSrv;
+    addrSrv.sin_addr.S_un.S_addr = htonl(INADDR_ANY);
+    addrSrv.sin_port = htons(4000);
+    addrSrv.sin_family = AF_INET;
+    bind(sockSrv,(SOCKADDR*)&addrSrv,sizeof(SOCKADDR));
+    
+    SOCKADDR_IN addrRecv;
+    char recvBuf[100];
+    int len = sizeof(SOCKADDR);
+    recvfrom(sockSrv,recvBuf,100,0,(SOCKADDR*)&addrRecv,&len);
+    printf("%s",recvBuf);
+    closesocket(sockSrv);
+    return 1;
+}
+
+下面提示的错误：：
+--------------------配置: MinGW3.4.5 - CUI Debug, 编译器类型: MinGW--------------------
+检查文件依赖性...
+正在编译 C:\Documents and Settings\Administrator\My Documents\C-Free\Projects\Net\main.cpp...
+正在连接...
+[Error] C:\Documents and Settings\Administrator\My Documents\C-Free\Projects\Net\main.cpp:13: undefined reference to `_WSAStartup@8'
+[Error] C:\Documents and Settings\Administrator\My Documents\C-Free\Projects\Net\main.cpp:20: undefined reference to `_WSACleanup@0'
+[Error] C:\Documents and Settings\Administrator\My Documents\C-Free\Projects\Net\main.cpp:24: undefined reference to `_socket@12'
+[Error] C:\Documents and Settings\Administrator\My Documents\C-Free\Projects\Net\main.cpp:26: undefined reference to `_htonl@4'
+[Error] C:\Documents and Settings\Administrator\My Documents\C-Free\Projects\Net\main.cpp:27: undefined reference to `_htons@4'
+[Error] C:\Documents and Settings\Administrator\My Documents\C-Free\Projects\Net\main.cpp:29: undefined reference to `_bind@12'
+[Error] C:\Documents and Settings\Administrator\My Documents\C-Free\Projects\Net\main.cpp:34: undefined reference to `_recvfrom@24'
+[Error] C:\Documents and Settings\Administrator\My Documents\C-Free\Projects\Net\main.cpp:36: undefined reference to `_closesocket@4'
+[Error] collect2: ld returned 1 exit status
+构建中止 Net: 9 个错误, 0 个警告 
+引用 TOP 
+
+
+返回列表 
+上一主题 | 下一主题
+
+发新主题 
+传智播客
+灌水区
+如鹏时代
+IT天下
+视频专区
+C#视频
+C语言视频
+
+Discuz!NT - Discuz!NT - 统计 -  Sitemap 
+Comsenz Technology Ltd - 简洁版本 - 界面风格 
+Default 
+- TOP 
+ 
+Powered by Discuz!NT 3.0.0 © 2001-2010 Comsenz Inc. 
+Processed in 0.015625 second(s) , 3 queries. 
+帖子标题 
+作者 
+ 
+我的资料 

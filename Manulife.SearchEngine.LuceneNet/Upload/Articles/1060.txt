@@ -1,0 +1,88 @@
+    快速搜索   
+[登录] [注册] 
+
+论坛
+标签
+会员
+搜索
+帮助 
+Discuz!NT » 传智播客 » 如鹏时代 » 关于C 
+传智播客
+灌水区
+如鹏时代
+IT天下
+视频专区
+C#视频
+C语言视频
+
+关于C 
+[ 9 查看 / 0 回复 ]
+返回列表 
+  
+    
+发送短消息 
+UID
+1 
+精华
+0 
+威望
+-80 
+金钱
+-80 元 
+查看公共资料 搜索帖子 admin 
+ 
+admin
+组别管理员 
+性别 
+积分1629 
+帖子1708 
+注册时间 2010-06-25 
+admin  2010-06-26 00:11 |只看楼主 1# 
+字体大小: t T 
+关于C-Free和ResEd过程中的一个问题
+
+
+有同学反映：按照我说的方法把ResEd放入CFREE后，怎么编辑窗口程序的时候ResEd可以运行，但是没有对应工程选项。就是这么个空东西
+
+
+
+
+
+                
+下载 (35.2 KB)
+
+2008-11-29 00:13
+
+
+
+
+
+这是因为没有按照我课上说的：要先在cfree里打开那个dlg文件，再打开resed。
+只要先在C-Free中打开dialogs.dlg，然后再在工具里打开resed就可以了。
+具体原理可以参考这篇文章：http://www.rupeng.com/forum/thread-275-1-1.html 
+引用 TOP 
+
+
+返回列表 
+上一主题 | 下一主题
+
+发新主题 
+传智播客
+灌水区
+如鹏时代
+IT天下
+视频专区
+C#视频
+C语言视频
+
+Discuz!NT - Discuz!NT - 统计 -  Sitemap 
+Comsenz Technology Ltd - 简洁版本 - 界面风格 
+Default 
+- TOP 
+ 
+Powered by Discuz!NT 3.0.0 © 2001-2010 Comsenz Inc. 
+Processed in 0.015625 second(s) , 3 queries. 
+帖子标题 
+作者 
+ 
+我的资料 

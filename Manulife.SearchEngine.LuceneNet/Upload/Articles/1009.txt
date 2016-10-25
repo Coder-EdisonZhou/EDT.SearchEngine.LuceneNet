@@ -1,0 +1,148 @@
+    快速搜索   
+[登录] [注册] 
+
+论坛
+标签
+会员
+搜索
+帮助 
+Discuz!NT » 传智播客 » 如鹏时代 » win2003服务器安全防黑客配置(详细) 
+传智播客
+灌水区
+如鹏时代
+IT天下
+视频专区
+C#视频
+C语言视频
+
+win2003服务器安全防黑客配置(详细) 
+[ 10 查看 / 0 回复 ]
+返回列表 
+  
+    
+发送短消息 
+UID
+1 
+精华
+0 
+威望
+-80 
+金钱
+-80 元 
+查看公共资料 搜索帖子 admin 
+ 
+admin
+组别管理员 
+性别 
+积分1629 
+帖子1708 
+注册时间 2010-06-25 
+admin  2010-06-26 00:04 |只看楼主 1# 
+字体大小: t T 
+win2003服务器安全防黑客配置(详细)
+
+
+今天演示一下服务器权限的设置，实现目标是系统盘任何一个目录asp网马不可以浏览,事件查看器完全无错,所有程序正常运行.
+这个不同于之前做的两个演示，此演示基本上保留系统默认的那些权限组不变，保留原味,以免取消不当造成莫名其妙的错误.
+看过这个演示，之前的"超详细web服务器权限设置,精确到每个文件夹"和"超详细web服务器权限设置,事件查看器完全无报错"就不用再看了.这个比原来做的有所改进.操作系统用的是雨林木风的ghost镜像,补丁是打上截止11.2号最新的
+Power Users组是否取消无所谓
+具体操作看演示
+windows下根目录的权限设置：
+C:\WINDOWS\Application Compatibility Scripts 不用做任何修改，包括其下所有子目录
+C:\WINDOWS\AppPatch  AcWebSvc.dll已经有users组权限,其它文件加上users组权限
+C:\WINDOWS\Connection Wizard  取消users组权限
+C:\WINDOWS\Debug users组的默认不改
+C:\WINDOWS\Debug\UserMode默认不修改有写入文件的权限,取消users组权限,给特别的权限
+C:\WINDOWS\Debug\WPD不取消Authenticated Users组权限可以写入文件，创建目录.
+C:\WINDOWS\Driver Cache取消users组权限,给i386文件夹下所有文件加上users组权限
+C:\WINDOWS\Help取消users组权限
+C:\WINDOWS\Help\iisHelp\common取消users组权限
+C:\WINDOWS\IIS Temporary Compressed Files默认不修改
+C:\WINDOWS\ime不用做任何修改，包括其下所有子目录
+C:\WINDOWS\inf不用做任何修改，包括其下所有子目录
+C:\WINDOWS\Installer  删除everyone组权限，给目录下的文件加上everyone组读取和运行的权限
+C:\WINDOWS\java  取消users组权限,给子目录下的所有文件加上users组权限
+C:\WINDOWS\MAGICSET 默认不变
+C:\WINDOWS\Media 默认不变
+C:\WINDOWS\Microsoft.NET不用做任何修改，包括其下所有子目录
+C:\WINDOWS\msagent 取消users组权限，给子目录下的所有文件加上users组权限
+C:\WINDOWS\msapps  不用做任何修改，包括其下所有子目录
+C:\WINDOWS\mui取消users组权限
+C:\WINDOWS\PCHEALTH  默认不改
+C:\WINDOWS\PCHEALTH\ERRORREP\QHEADLES 取消everyone组的权限
+C:\WINDOWS\PCHEALTH\ERRORREP\QSIGNOFF 取消everyone组的权限
+C:\WINDOWS\PCHealth\UploadLB 删除everyone组的权限，其它下级目录不用管，没有user组和everyone组权限
+C:\WINDOWS\PCHealth\HelpCtr  删除everyone组的权限，其它下级目录不用管，没有user组和everyone组权限(这个不用按照演示中的搜索那些文件了，不须添加users组权限就行)
+C:\WINDOWS\PIF  默认不改
+C:\WINDOWS\PolicyBackup默认不改,给子目录下的所有文件加上users组权限
+C:\WINDOWS\Prefetch  默认不改
+C:\WINDOWS\provisioning 默认不改,给子目录下的所有文件加上users组权限
+C:\WINDOWS\pss默认不改,给子目录下的所有文件加上users组权限
+C:\WINDOWS\RegisteredPackages默认不改,给子目录下的所有文件加上users组权限
+C:\WINDOWS\Registration\CRMLog默认不改会有写入的权限，取消users组的权限
+C:\WINDOWS\Registration取消everyone组权限.加NETWORK SERVICE 给子目录下的文件加everyone可读取的权限,
+C:\WINDOWS\repair取消users组权限
+C:\WINDOWS\Resources取消users组权限
+C:\WINDOWS\security users组的默认不改，其下Database和logs目录默认不改.取消templates目录users组权限,给文件加上users组
+C:\WINDOWS\ServicePackFiles  不用做任何修改，包括其下所有子目录
+C:\WINDOWS\SoftwareDistribution不用做任何修改，包括其下所有子目录
+C:\WINDOWS\srchasst  不用做任何修改，包括其下所有子目录
+C:\WINDOWS\system 保持默认
+C:\WINDOWS\TAPI取消users组权限，其下那个tsec.ini权限不要改
+C:\WINDOWS\twain_32取消users组权限，给目录下的文件加users组权限
+C:\WINDOWS\vnDrvBas  不用做任何修改，包括其下所有子目录
+C:\WINDOWS\Web取消users组权限给其下的所有文件加上users组权限
+C:\WINDOWS\WinSxS 取消users组权限，搜索*.tlb，*.policy，*.cat，*.manifest,*.dll，给这些文件加上everyone组和users权限
+给目录加NETWORK SERVICE完全控制的权限
+C:\WINDOWS\system32\wbem 这个目录有重要作用。如果不给users组权限，打开一些应用软件时会非常慢。并且事件查看器中有时会报出一堆错误。导致一些程序不能正常运行。但为了不让webshell有浏览系统所属目录的权限，给wbem目录下所有的*.dll文件users组和everyone组权限。
+*.dll
+users;everyone
+我先暂停。你操作时挨个检查就行了
+C:\WINDOWS\#$$#%^$^@!#$%$^S#@\#$#$%$#@@@$%!!WERa  (我用的temp文件夹路径)temp由于必须给写入的权限，所以修改了默认路径和名称。防止webshell往此目录中写入。修改路径后要重启生效。
+
+至此，系统盘任何一个目录是不可浏览的，唯一一个可写入的C:\WINDOWS\temp，又修改了默认路径和名称变成C:\WINDOWS\#$$#%^$^@!#$%$^S#@\#$#$%$#@@@$%!!WERa
+这样配置应该相对安全了些。
+我先去安装一下几款流行的网站程序，先暂停.几款常用的网站程序在这样的权限设置下完全正常。还没有装上sql2000数据库，无法测试动易2006SQL版了。肯定正常。大家可以试试。
+服务设置：
+1.设置win2k的屏幕保护,用pcanywhere的时候,有时候下线时忘记锁定计算机了，如果别人破解了你的pcanywhere密码，就直接可以进入你计算机，如果设置了屏保，当你几分钟不用后就自动锁定计算机，这样就防止了用pcanyhwerer直接进入你计算机的可能，也是防止内部人员破坏服务器的一个屏障
+2.关闭光盘和磁盘的自动播放功能，在组策略里面设.这样可以防止入侵者编辑恶意的autorun.inf让你以管理员的身份运行他的木马，来达到提升权限的目的。可以用net share 查看默认共享。由于没开server服务,等于已经关闭默认共享了,最好还是禁用server服务。
+附删除默认共享的命令：
+net share c$ /del 
+net share d$ /del 
+net share e$ /del 
+net share f$ /del 
+net share ipc$ /del 
+net share admin$ /del
+3.关闭不需要的端口和服务，在网络连接里，把不需要的协议和服务都删掉，这里只安装了基本的Internet协议（TCP/IP），由于要控制带宽流量服务，额外安装了Qos数据包计划程序。在高级tcp/ip设置里--"NetBIOS"设置"禁用tcp/IP上的NetBIOS 。
+修改3389远程连接端口(也可以用工具修改更方便) 
+修改注册表.  
+开始--运行--regedit  
+依次展开 HKEY_LOCAL_MACHINE/SYSTEM/CURRENTCONTROLSET/CONTROL/  
+TERMINAL SERVER/WDS/RDPWD/TDS/TCP  
+右边键值中 PortNumber 改为你想用的端口号 
+引用 TOP 
+
+
+返回列表 
+上一主题 | 下一主题
+
+发新主题 
+传智播客
+灌水区
+如鹏时代
+IT天下
+视频专区
+C#视频
+C语言视频
+
+Discuz!NT - Discuz!NT - 统计 -  Sitemap 
+Comsenz Technology Ltd - 简洁版本 - 界面风格 
+Default 
+- TOP 
+ 
+Powered by Discuz!NT 3.0.0 © 2001-2010 Comsenz Inc. 
+Processed in 0 second(s) , 3 queries. 
+帖子标题 
+作者 
+ 
+我的资料 

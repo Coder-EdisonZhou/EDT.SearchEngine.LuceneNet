@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Lucene.Net Demo", "01.Lucene.Net Demo", "{42EBF177-0F26-43A5-A69F-30FC02CA96B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Intra-Site Search", "02.Intra-Site Search", "{D4115617-56D1-46A6-8495-0EF479A6A24E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manulife.SearchEngine.LuceneNet", "Manulife.SearchEngine.LuceneNet\Manulife.SearchEngine.LuceneNet.csproj", "{263AACF7-36D3-464F-A528-888F988F0AA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manulife.SearchEngine.Web", "Manulife.SearchEngine.Web\Manulife.SearchEngine.Web.csproj", "{450F37A4-6F31-4F19-9B50-935C4AE33E92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manulife.SearchEngine.Model", "Manulife.SearchEngine.Model\Manulife.SearchEngine.Model.csproj", "{B08B66D4-36D5-4E44-85C1-67AD5481CC71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manulife.SearchEngine.Dao", "Manulife.SearchEngine.Dao\Manulife.SearchEngine.Dao.csproj", "{63F11141-3CB7-4066-A71B-BF2A8BDBBA1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manulife.SearchEngine.Service", "Manulife.SearchEngine.Service\Manulife.SearchEngine.Service.csproj", "{D60A4A44-47CA-4923-9CBE-B54FD55D4B53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{263AACF7-36D3-464F-A528-888F988F0AA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{263AACF7-36D3-464F-A528-888F988F0AA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{263AACF7-36D3-464F-A528-888F988F0AA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{263AACF7-36D3-464F-A528-888F988F0AA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{450F37A4-6F31-4F19-9B50-935C4AE33E92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{450F37A4-6F31-4F19-9B50-935C4AE33E92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{450F37A4-6F31-4F19-9B50-935C4AE33E92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{450F37A4-6F31-4F19-9B50-935C4AE33E92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B08B66D4-36D5-4E44-85C1-67AD5481CC71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B08B66D4-36D5-4E44-85C1-67AD5481CC71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B08B66D4-36D5-4E44-85C1-67AD5481CC71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B08B66D4-36D5-4E44-85C1-67AD5481CC71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63F11141-3CB7-4066-A71B-BF2A8BDBBA1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63F11141-3CB7-4066-A71B-BF2A8BDBBA1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63F11141-3CB7-4066-A71B-BF2A8BDBBA1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63F11141-3CB7-4066-A71B-BF2A8BDBBA1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D60A4A44-47CA-4923-9CBE-B54FD55D4B53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D60A4A44-47CA-4923-9CBE-B54FD55D4B53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D60A4A44-47CA-4923-9CBE-B54FD55D4B53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D60A4A44-47CA-4923-9CBE-B54FD55D4B53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{263AACF7-36D3-464F-A528-888F988F0AA4} = {42EBF177-0F26-43A5-A69F-30FC02CA96B4}
+		{450F37A4-6F31-4F19-9B50-935C4AE33E92} = {D4115617-56D1-46A6-8495-0EF479A6A24E}
+		{B08B66D4-36D5-4E44-85C1-67AD5481CC71} = {D4115617-56D1-46A6-8495-0EF479A6A24E}
+		{63F11141-3CB7-4066-A71B-BF2A8BDBBA1A} = {D4115617-56D1-46A6-8495-0EF479A6A24E}
+		{D60A4A44-47CA-4923-9CBE-B54FD55D4B53} = {D4115617-56D1-46A6-8495-0EF479A6A24E}
+	EndGlobalSection
+EndGlobal

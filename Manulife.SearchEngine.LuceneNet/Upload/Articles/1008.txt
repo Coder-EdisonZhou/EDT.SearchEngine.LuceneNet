@@ -1,0 +1,183 @@
+    快速搜索   
+[登录] [注册] 
+
+论坛
+标签
+会员
+搜索
+帮助 
+Discuz!NT » 传智播客 » 如鹏时代 » 某网络专业人士笔记(2) 
+传智播客
+灌水区
+如鹏时代
+IT天下
+视频专区
+C#视频
+C语言视频
+
+某网络专业人士笔记(2) 
+[ 10 查看 / 0 回复 ]
+返回列表 
+  
+    
+发送短消息 
+UID
+1 
+精华
+0 
+威望
+-80 
+金钱
+-80 元 
+查看公共资料 搜索帖子 admin 
+ 
+admin
+组别管理员 
+性别 
+积分1629 
+帖子1708 
+注册时间 2010-06-25 
+admin  2010-06-26 00:04 |只看楼主 1# 
+字体大小: t T 
+某网络专业人士笔记(2)
+
+
+
+
+4、执行路由核心复制 
+　　core dump包含一份当前系统内存中信息的精确拷贝。捕捉包含在内存中信息的方法有： 
+　　1） 配置路由器在崩溃时执行Core Dump，存储到TFTP、FTP、RCP服务器： 
+　　对TFTP协议，只需指定TFTP服务器IP，不需要任何附加的配置： 
+　　Router(config)#exception dump 192.168.1.1 ；TFTP服务器的IP地址 
+　　对FTP协议的配置： 
+　　Router(config)#exception dump 192.168.1.1 ；FTP服务器的IP地址 
+　　Router(config)#ip ftp username Kevin 
+　　Router(config)#ip ftp password aloha 
+　　Router(config)#ip ftp source-interface e0 
+　　Router(config)#exception protocol ftp 
+　　对RCP协议的配置： 
+　　Router(config)#exception protocol rcp 
+　　Router(config)#exception dump 192.168.1.1 ；RCP服务器的IP地址 
+　　Router(config)#ip rcmd remote-username Kevin 
+　　Router(config)#ip rcmd rcp-enable 
+　　Router(config)#ip rcmd rsh-enable 
+　　Router(config)#ip rcmd remote-host Kevin 192.168.1.1 kevin ； 
+　　2） 在系统没有崩溃的情况下，执行Core Dump命令。 
+　　Router#write core 
+　　Core Dump仅在Cisco工程师测试和解决路由器问题时有用。
+　　5、ping命令 
+　　ping用于测试整个网络可达性和连通性。可在用户EXEC模式和特权EXEC模式下使用。 
+　　IP的ping使用ICMP协议提供连通性和可能性信息，缺省只发送5个echo信息。 
+　　扩展Ping的选项有：源IP地址；服务类型；数据；包头选项。 
+　　Ping的响应字符集 
+　　字符 解释 字符 解释 
+　　! Received an echo-reply message Q Source quench 
+　　. Timeout M Unable to fragment 
+　　U/H Destination unreachable A Administratively denied 
+　　N Network unreachable ? Unknown packet-type 
+　　P Protocol unreachable 
+　　6、traceroute命令 
+　　traceroute用于显示到达目标的包路径。可在用户模式和特权模式下使用。 
+　　Traceroute的响应： 
+　　字符 解释 字符 解释 
+　　Xx msec The RTT for each packet * Timeout 
+　　H Host unreachable U Port unreachable 
+　　N Network unreachable P Protocol unreachable 
+　　A Administratively denied Q Source quench 
+　　? Unknown packet type
+二、LAN连接问题 
+　　1、获得IP地址 
+　　主机可以动态或静态获得IP地址。 
+　　1） DHCP：DHCP比BootP多了地址池和租期。 
+　　2） BootP： 
+　　3） Helper Addresses：指定集中放置的DHCP服务器的IP地址 
+　　Ip helperaddress ip-address ； 
+　　No ip forward-protocol udp 137 ； 
+　　4） 路由器上的DHCP服务：配置路由器为一台DHCP服务器 
+　　5） DHCP和BootP故障处理 
+　　Show dhcp server ； 
+　　Show dhcp lease ； 
+　　2、ARP 
+　　ARP映射第2层MAC地址到第3层地址。 
+　　Show arp ；显示路由器的ARP表 
+　　Debug arp ； 
+　　1） ARP代理：缺省Cisco路由器的ARP代理是启用的 
+　　在下列情况下，CISCO路由器将用自身的MAC地址响应ARP请求： 
+　　? 接收到ARP的接口上的Proxy ARP是启用的； 
+　　? ARP请求的地址不在本地子网； 
+　　? 路由器的路由表中包含ARP请求地址的子网； 
+　　3、TCP连接示例 
+　　三、IP访问列表 
+　　1、标准ACL：基于IP包的源IP地址允许或禁用 
+　　2、扩展ACL：提供源地址、目标地址、端口号、会话层协议进行过滤。 
+　　3、命名ACL：可以是标准ACL，也可以是扩展ACL。 
+　　命名ACL与编号ACL的区别：命名ACL有一个逻辑名，可以删除命名ACL中单独一行。 
+　　Ip access-list extended Example-Named-ACL 
+　　Deny tcp any any eq echo 
+　　Deny tcp any any eq 37 
+　　Permit udp host 172.16.10.2 any eq snmp 
+　　Permit tcp any any
+第6章 TCP/IP路由协议故障处理 
+　　一、缺省网关 
+　　当包的目的地址不在路由器的路由表中，如路由器配置了缺省网关，则转发到缺省网关，否则就丢弃。 
+　　Show ip route ；查看Cisco路由器的缺省网关 
+　　二、静态和动态路由 
+　　三、处理k_protocal/04937.htm" target="_blank">RIP故障 
+　　RIP是距离矢量路由协议，度量值是跳数。RIP最大跳数为15，如果到目标的跳数超过15，则为不可达。 
+　　RIP V1是有类别路由协议，RIP V2是非分类路由协议，支持CIDR、路由归纳、VLSM，使用多播（224.0.0.9）发送路由更新。 
+　　RIP相关的show命令： 
+　　Show ip route rip ；仅显示RIP路由表 
+　　Show ip route ；显示所有IP路由表 
+　　Show ip interface ；显示IP接口配置 
+　　Show running-config 
+　　Debug ip rip events ； 
+　　常见的RIP故障：RIP版本不一致、RIP使用UDP广播更新 
+　　四、处理IGRP故障 
+　　IGRP是Cisco专用路由协议，距离矢量协议。IGRP的度量值可以基于五个要素：带宽、延时、负载、可靠性、MTU，缺省只使用带宽和延时。 
+　　IGRP相关的show命令： 
+　　Show ip route igrp ；显示IGRP路由表 
+　　Debug ip igrp events ； 
+　　Debug ip igrp transactions ； 
+　　常见的IGRP故障：访问列表、不正确的配置、到相邻路由器的line down 
+　　五、处理EIGRP故障 
+　　EIGRP是链路状态协议和距离矢量混合协议，是CISCO专用路由协议。EIGRP使用多播地址224.0.0.10发送路由更新，使用DUAL算法计算路由。EIGRP的度量值可以基于带宽、延时、负载、可靠性、MTU，缺省仅使用带宽和延时。 
+　　EIGRP使用3种数据库：路由数据库、拓扑数据库、相邻路由器数据库。 
+　　EIGRP相关的show命令： 
+　　Show running-config 
+　　Show ip route 
+　　Show ip route eigrp ；仅显示EIGRP路由 
+　　Show ip eigrp interface ；显示该接口的对等体信息 
+　　Show ip eigrp neighbors ；显示所有的EIGRP邻居及其信息 
+　　Show ip eigrp topology ；显示EIGRP拓扑结构表的内容 
+　　Show ip eigrp traffic ；显示EIGRP路由统计的归纳 
+　　Show ip eigrp events ；显示最近的EIGRP协议事件记录 
+　　EIGRP相关的debug命令： 
+　　Debug ip eigrp as号 
+　　Debug ip eigrp neighbor 
+　　Debug ip eigrp notifications 
+引用 TOP 
+
+
+返回列表 
+上一主题 | 下一主题
+
+发新主题 
+传智播客
+灌水区
+如鹏时代
+IT天下
+视频专区
+C#视频
+C语言视频
+
+Discuz!NT - Discuz!NT - 统计 -  Sitemap 
+Comsenz Technology Ltd - 简洁版本 - 界面风格 
+Default 
+- TOP 
+ 
+Powered by Discuz!NT 3.0.0 © 2001-2010 Comsenz Inc. 
+Processed in 0.015625 second(s) , 3 queries. 
+帖子标题 
+作者 
+ 
+我的资料 

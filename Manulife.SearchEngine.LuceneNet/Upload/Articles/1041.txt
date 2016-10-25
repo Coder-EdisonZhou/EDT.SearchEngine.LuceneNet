@@ -1,0 +1,168 @@
+    快速搜索   
+[登录] [注册] 
+
+论坛
+标签
+会员
+搜索
+帮助 
+Discuz!NT » 传智播客 » 如鹏时代 » 【教学视频】《C语言也能干大事》第十节：常见控件及菜单 
+传智播客
+灌水区
+如鹏时代
+IT天下
+视频专区
+C#视频
+C语言视频
+
+【教学视频】《C语言也能干大事》第十节：常见控件及菜单 
+[ 9 查看 / 0 回复 ]
+返回列表 
+  
+    
+发送短消息 
+UID
+1 
+精华
+0 
+威望
+-80 
+金钱
+-80 元 
+查看公共资料 搜索帖子 admin 
+ 
+admin
+组别管理员 
+性别 
+积分1629 
+帖子1708 
+注册时间 2010-06-25 
+admin  2010-06-26 00:09 |只看楼主 1# 
+字体大小: t T 
+【教学视频】《C语言也能干大事》第十节：常见控件及菜单
+
+
+《C语言也能干大事》已经录制第二版，不推荐初学者学习这里的旧版，因此请到下面的地址（ http://www.rupeng.com/forum/forum-52-1.html ）学习第二版。
+
+在线视频(非清晰在线版)：
+document.write(AC_FL_RunContent('width', '550', 'height', '400', 'allowNetworking', 'internal', 'allowScriptAccess', 'never', 'src', 'http://player.youku.com/player.php/sid/XNTU4MTY0MTI=/v.swf', 'quality', 'high', 'bgcolor', '#ffffff', 'wmode', 'transparent', 'allowfullscreen', 'true'));
+
+
+
+如鹏电骡（verycd）下载站：http://www.verycd.com/topics/2800166/
+
+高清版
+不提供下载
+
+由于录制视频后半段的时候电脑有一些故障，所以后半段的画面和声音有些不同步，请同学们看到那块儿的时候不要困惑，以后我会尽力避免此类情况。
+
+板书：
+7、ListBox
+（1）添加项：
+如果采用LBS_SORT样式，那么填入清单方块最简单的方法是借助LB_ADDSTRING消息：
+SendMessage (hwndList, LB_ADDSTRING, 0, (LPARAM) szString) ;
+
+如果没有采用LBS_SORT，那么可以使用LB_INSERTSTRING指定一个索引值，将字符串插入到清单方块中：
+SendMessage (hwndList, LB_INSERTSTRING, iIndex, (LPARAM) szString) ;
+示例代码：
+SendMessage(hwndLB,LB_INSERTSTRING,0,(LPARAM)TEXT("你好"));
+（2）删除项：
+在指定索引值的同时使用LB_DELETESTRING参数，这就可以从清单方块中删除字符串：
+SendMessage (hwndList, LB_DELETESTRING, iIndex, 0) ;
+（3）取得有多少项：
+iCount = SendMessage (hwndList, LB_GETCOUNT, 0, 0) ;(4)选定某一项SendMessage (hwndList, LB_SETCURSEL, iIndex, 0) ;将iParam设定为-1则取消所有选择(5) 确定目前选项的索引：iIndex = SendMessage (hwndList, LB_GETCURSEL, 0, 0) ;如果没有项目被选中，那么从呼叫中传回的iIndex值为LB_ERR。（6）将某项目复制到文字缓冲区中：iLength = SendMessage (
+hwndList, LB_GETTEXT, iIndex,
+
+(LPARAM) szBuffer) ;确定清单方块中字符串的长度：iLength = SendMessage (hwndList, LB_GETTEXTLEN, iIndex, 0) ;对以NULL字符终结的字符串长度来说，szBuffer数组必须够大。您也许想用LB_GETTEXTLEN先分配一些局部内存来存放字符串。 
+课下练习：
+用户在【姓名】中输入姓名，点击【输入】按钮，如果姓名已经存在，则提示“姓名重复”不能添加，否则将此姓名加入ListBox。
+用户在【姓名】中输入姓名，点击【查找】按钮，如果姓名存在于ListBox中，则将此姓名选中；
+用户点击【显示当前姓名】按钮，则将用户当前选择的姓名MessageBox出来，如果没有任何被选中，则提示“没有人员被选中。”
+
+10、RadioButton的分组
+        各个组内按钮的id要从小到大排列，而且各组之间的id段不能重叠。举例：
+第一个组：
+#define IDC_RBN1 1002
+#define IDC_RBN2 1003
+第二个组：
+#define IDC_RBN3 1007
+#define IDC_RBN4 1008
+#define IDC_RBN5 1010
+一定要设置所有RadioButton的Auto属性为False。然后在响应WM_COMMAND的代码中如下编写：
+
+
+case IDC_RBN1:
+
+
+case IDC_RBN2:
+
+
+CheckRadioButton(hwnd,IDC_RBN1,IDC_RBN2,id);
+
+
+
+
+break;
+
+
+case IDC_RBN3:
+
+
+case IDC_RBN4:
+
+
+case IDC_RBN5:
+
+
+CheckRadioButton(hwnd,IDC_RBN3,IDC_RBN5,id); //选中
+IDC_RBN3至IDC_RBN5
+段的id为id的控件。
+
+
+break;
+
+9、菜单资源
+（1）制作好菜单资源后，在对话框的Menu属性中选择刚才制作好的对话框。
+（2）响应菜单操作。菜单点击后会发送WM_COMMAND消息，使用HANDLE_MSG进行映射后id就是被选择菜单的id。例子：
+
+
+case IDM_QUIT:
+
+
+EndDialog(hwnd,id);
+
+
+本节课源代码下载（请自己敲代码，而不是直接下载老师的代码）：
+
+listboxzy.rar (14.53 KB)
+
+
+下载次数: 926
+
+2008-11-27 10:11 
+引用 TOP 
+
+
+返回列表 
+上一主题 | 下一主题
+
+发新主题 
+传智播客
+灌水区
+如鹏时代
+IT天下
+视频专区
+C#视频
+C语言视频
+
+Discuz!NT - Discuz!NT - 统计 -  Sitemap 
+Comsenz Technology Ltd - 简洁版本 - 界面风格 
+Default 
+- TOP 
+ 
+Powered by Discuz!NT 3.0.0 © 2001-2010 Comsenz Inc. 
+Processed in 0.015625 second(s) , 3 queries. 
+帖子标题 
+作者 
+ 
+我的资料 

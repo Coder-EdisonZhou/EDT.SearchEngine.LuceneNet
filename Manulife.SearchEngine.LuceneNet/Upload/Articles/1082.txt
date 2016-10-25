@@ -1,0 +1,122 @@
+    快速搜索   
+[登录] [注册] 
+
+论坛
+标签
+会员
+搜索
+帮助 
+Discuz!NT » 传智播客 » 如鹏时代 » 【教学视频】软件企业实战探秘—团队开发 
+传智播客
+灌水区
+如鹏时代
+IT天下
+视频专区
+C#视频
+C语言视频
+
+【教学视频】软件企业实战探秘—团队开发 
+[ 9 查看 / 0 回复 ]
+返回列表 
+  
+    
+发送短消息 
+UID
+1 
+精华
+0 
+威望
+-80 
+金钱
+-80 元 
+查看公共资料 搜索帖子 admin 
+ 
+admin
+组别管理员 
+性别 
+积分1629 
+帖子1708 
+注册时间 2010-06-25 
+admin  2010-06-26 00:14 |只看楼主 1# 
+字体大小: t T 
+【教学视频】软件企业实战探秘—团队开发
+
+
+软件企业里是如何对软件进行团队开发的？几十人、上百人、甚至成千上万的开发人员是怎么协作的？杨中科老师带你走进企业第一线一探究竟。
+在线视频：document.write(AC_FL_RunContent('width', '550', 'height', '400', 'allowNetworking', 'internal', 'allowScriptAccess', 'never', 'src', 'http://player.youku.com/player.php/sid/XNTY2MzI5ODA=/v.swf', 'quality', 'high', 'bgcolor', '#ffffff', 'wmode', 'transparent', 'allowfullscreen', 'true'));
+
+
+
+
+板书：
+小作坊开发模式
+规模：三五个人
+合作方式：每人负责一块儿，交互不多
+集成方式：定期把代码拷贝到一块联调
+代码版本管理：每天拷贝一份，以日期命名文件夹
+测试工作：开发人员测试、客户测试，没有专门测试人员
+Bug管理：没有管理，口头传达，脑子记
+文档管理：没有管理，拷来拷去
+源码基本靠拷、Bug基本靠口、文档基本靠手
+
+
+正规的团队化开发不能这样
+要求：
+源代码要能追溯到任意版本
+同事之间共享代码要更科学
+BUG要管起来，谁每天该改哪些Bug，改的怎么样了要有评估
+文档要管起来，所有人都只能修改同一份文档，看同一份文档，而且文档也要能回归
+源码管理
+源码管理要处理的问题
+代码的版本管理
+代码的共享
+代码的并发修改
+
+源码管理
+简称：SourceControl（源代码控制）。
+常用软件：VSS、TFS、CVS、SVN。理念和操作方式都一样。
+这次给大家演示VSS。以后讲Java的时候会演示CVS、SVN。
+源码管理演示
+创建VSS源码管理服务器
+创建两个帐户：yzk、kider
+yzk将一个C#工程添加到源码管理服务器
+kider从源码管理服务器上得到源代码
+yzk修改了代码，并且checkin（签入）
+kider得到最新版本
+kider添加了一个新的文件，yzk得到最新版
+kider和yzk同时修改一个文件，需要解决冲突。
+
+Bug管理
+BugFree、TFS、JIRA。
+BugFree：从微软出来的工程师的大作，渗透了微软Bug管理的思想。免费、开源的，大家可以自己下载安装。
+系统中有两个帐号：yzk、kider。
+kider给yzk提一条bug，yzk邮箱里面能收到通知邮件。
+yzk到系统中查看此bug，修改后解决此bug。
+kider审查通过，关闭bug。
+kider又给yzk提一条bug，yzk修改此bug，然后解决。kider看yzk没改对，重新激活。。。 
+引用 TOP 
+
+
+返回列表 
+上一主题 | 下一主题
+
+发新主题 
+传智播客
+灌水区
+如鹏时代
+IT天下
+视频专区
+C#视频
+C语言视频
+
+Discuz!NT - Discuz!NT - 统计 -  Sitemap 
+Comsenz Technology Ltd - 简洁版本 - 界面风格 
+Default 
+- TOP 
+ 
+Powered by Discuz!NT 3.0.0 © 2001-2010 Comsenz Inc. 
+Processed in 0.015625 second(s) , 3 queries. 
+帖子标题 
+作者 
+ 
+我的资料 

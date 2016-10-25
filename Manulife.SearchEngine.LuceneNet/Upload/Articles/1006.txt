@@ -1,0 +1,80 @@
+    快速搜索   
+[登录] [注册] 
+
+论坛
+标签
+会员
+搜索
+帮助 
+Discuz!NT » 传智播客 » 如鹏时代 » 让您的电脑每次的开机音乐都不一样 
+传智播客
+灌水区
+如鹏时代
+IT天下
+视频专区
+C#视频
+C语言视频
+
+让您的电脑每次的开机音乐都不一样 
+[ 11 查看 / 0 回复 ]
+返回列表 
+  
+    
+发送短消息 
+UID
+1 
+精华
+0 
+威望
+-80 
+金钱
+-80 元 
+查看公共资料 搜索帖子 admin 
+ 
+admin
+组别管理员 
+性别 
+积分1629 
+帖子1708 
+注册时间 2010-06-25 
+admin  2010-06-26 00:04 |只看楼主 1# 
+字体大小: t T 
+让您的电脑每次的开机音乐都不一样
+
+
+想让您的电脑更炫么？那就从开机做起，让您的电脑每次的开机音乐都不一样，来看方法吧
+首先创建一个新目录，如C:\Windows\StartSound，将要使用的声音wav文件放进此目录中，并依次命名为sound01.wav、sound02.wav……等，以此类推。
+打开“控制面板”中的“声音”属性，选中“启动Windows”后点击“浏览”，选择一个声音文件，如C:\Windows\Media\Chord.wav后，确定退出。其次，用“写字板”建立一个批处理文件，内容如下：
+cd C:\Windows\Start Sound
+ren sound01.wav soundxx.wav
+ren sound02.wav sound01.wav
+ren sound03.wav sound02.wav
+ren soundxx.wav sound03.wav
+copy soundxx.wav C:\Windows\Media\Chord.wav
+其中xx视自己所选择的声音文件的数目而定。将此批处理文件存盘并加入Autoexec.bat中，以在开机时被自动激活。至此，你就可以在每次开机时欣赏一段不同的属于自己的音乐了。 
+引用 TOP 
+
+
+返回列表 
+上一主题 | 下一主题
+
+发新主题 
+传智播客
+灌水区
+如鹏时代
+IT天下
+视频专区
+C#视频
+C语言视频
+
+Discuz!NT - Discuz!NT - 统计 -  Sitemap 
+Comsenz Technology Ltd - 简洁版本 - 界面风格 
+Default 
+- TOP 
+ 
+Powered by Discuz!NT 3.0.0 © 2001-2010 Comsenz Inc. 
+Processed in 0.046875 second(s) , 3 queries. 
+帖子标题 
+作者 
+ 
+我的资料 

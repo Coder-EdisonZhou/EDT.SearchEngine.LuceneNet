@@ -1,0 +1,24 @@
+﻿html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; }
+html, body { color: #444; background-color: #e6e6e6; font-family:'Microsoft YaHei'; }
+
+a:link, a:visited { color: #444; text-decoration: none; }
+.page { background-color: #fff; margin: 20px auto; padding: 20px 40px; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3); }
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) { .page { width: 680px;} }
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) { .page { width: 880px;} }
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) { .page { width: 1024px;} }
+.page-head { line-height: 1.846153846; }
+.page-head > a { color: #515151; display: inline-block; text-decoration: none; font-size: 36px; }
+.page-sub-head { font-weight: normal; font-size: 13px; font-size: 0.928571429rem; line-height: 1.846153846; color: #757575; }
+.panel { margin: 20px 0 10px; }
+.panel-head { font-size: 26px; line-height: 1.846153846; border-bottom: 1px solid #e0e0e0; }
+.panel-body { padding: 10px; }
+.page-foot
+{
+    text-align:center;
+    margin-bottom:5px;
+}
