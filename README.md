@@ -29,7 +29,8 @@
 　　一个ASP.NET WebForm的网站，主要提供Admin管理操作（文章帖子的CRUD）以及站内搜索（我们的关注点就在这儿）。
 
 **示例效果演示**
-   前面说了那么多，终于到了Show Time。不过，也没什么好Show的：
+<br/>
+前面说了那么多，终于到了Show Time。不过，也没什么好Show的：
 　（1）一周热词
 ![markdown](https://images2015.cnblogs.com/blog/381412/201604/381412-20160404223153031-216822458.jpg "markdown")<br/>
   （2）搜索提示
