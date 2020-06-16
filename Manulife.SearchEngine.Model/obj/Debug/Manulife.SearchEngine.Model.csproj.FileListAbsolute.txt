@@ -1,4 +1,0 @@
-E:\Project\dotNet Projects\Manulife.SearchEngine\Manulife.SearchEngine.Model\bin\Debug\Manulife.SearchEngine.Model.dll
-E:\Project\dotNet Projects\Manulife.SearchEngine\Manulife.SearchEngine.Model\bin\Debug\Manulife.SearchEngine.Model.pdb
-E:\Project\dotNet Projects\Manulife.SearchEngine\Manulife.SearchEngine.Model\obj\Debug\Manulife.SearchEngine.Model.dll
-E:\Project\dotNet Projects\Manulife.SearchEngine\Manulife.SearchEngine.Model\obj\Debug\Manulife.SearchEngine.Model.pdb

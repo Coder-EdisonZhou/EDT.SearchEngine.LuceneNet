@@ -1,0 +1,904 @@
+
+ 
+记录时间：2016-04-04 00:00:32,787 
+线程ID:[7] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The status of index : True
+ 
+
+ 
+记录时间：2016-04-04 00:00:32,794 
+线程ID:[7] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Total number of task : 1
+ 
+
+ 
+记录时间：2016-04-04 00:02:48,244 
+线程ID:[1] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 00:03:15,387 
+线程ID:[1] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 00:04:37,838 
+线程ID:[6] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The status of index : True
+ 
+
+ 
+记录时间：2016-04-04 00:04:46,338 
+线程ID:[6] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Total number of task : 1
+ 
+
+ 
+记录时间：2016-04-04 00:08:01,565 
+线程ID:[1] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 00:08:29,584 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The status of index : True
+ 
+
+ 
+记录时间：2016-04-04 00:08:29,641 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Total number of task : 1
+ 
+
+ 
+记录时间：2016-04-04 00:08:30,955 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Index 19 has been writen to index library!
+ 
+
+ 
+记录时间：2016-04-04 00:08:31,296 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The index library has been closed!
+ 
+
+ 
+记录时间：2016-04-04 00:12:15,329 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The status of index : True
+ 
+
+ 
+记录时间：2016-04-04 00:12:15,333 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Total number of task : 1
+ 
+
+ 
+记录时间：2016-04-04 00:12:15,337 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Index 19 has been writen to index library!
+ 
+
+ 
+记录时间：2016-04-04 00:12:15,363 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The index library has been closed!
+ 
+
+ 
+记录时间：2016-04-04 00:12:29,365 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The status of index : True
+ 
+
+ 
+记录时间：2016-04-04 00:12:29,378 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Total number of task : 1
+ 
+
+ 
+记录时间：2016-04-04 00:12:29,389 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Index 21 has been writen to index library!
+ 
+
+ 
+记录时间：2016-04-04 00:12:29,412 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The index library has been closed!
+ 
+
+ 
+记录时间：2016-04-04 00:12:47,468 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The status of index : True
+ 
+
+ 
+记录时间：2016-04-04 00:12:47,481 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Total number of task : 1
+ 
+
+ 
+记录时间：2016-04-04 00:12:47,503 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Index 19 has been writen to index library!
+ 
+
+ 
+记录时间：2016-04-04 00:12:47,676 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The index library has been closed!
+ 
+
+ 
+记录时间：2016-04-04 00:13:07,687 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The status of index : True
+ 
+
+ 
+记录时间：2016-04-04 00:13:07,712 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Total number of task : 1
+ 
+
+ 
+记录时间：2016-04-04 00:13:07,717 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Index 10 has been writen to index library!
+ 
+
+ 
+记录时间：2016-04-04 00:13:07,788 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The index library has been closed!
+ 
+
+ 
+记录时间：2016-04-04 00:14:34,982 
+线程ID:[1] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 00:14:53,979 
+线程ID:[6] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The status of index : True
+ 
+
+ 
+记录时间：2016-04-04 00:14:54,048 
+线程ID:[6] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Total number of task : 1
+ 
+
+ 
+记录时间：2016-04-04 00:14:55,651 
+线程ID:[6] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Index 19 has been writen to index library!
+ 
+
+ 
+记录时间：2016-04-04 00:14:55,819 
+线程ID:[6] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The index library has been closed!
+ 
+
+ 
+记录时间：2016-04-04 00:16:09,727 
+线程ID:[6] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The status of index : True
+ 
+
+ 
+记录时间：2016-04-04 00:16:12,946 
+线程ID:[6] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Total number of task : 1
+ 
+
+ 
+记录时间：2016-04-04 00:16:18,315 
+线程ID:[6] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The index library has been closed!
+ 
+
+ 
+记录时间：2016-04-04 00:20:30,395 
+线程ID:[1] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 00:22:59,085 
+线程ID:[6] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The status of index : True
+ 
+
+ 
+记录时间：2016-04-04 00:22:59,156 
+线程ID:[6] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Total number of task : 1
+ 
+
+ 
+记录时间：2016-04-04 00:22:59,218 
+线程ID:[6] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The index library has been closed!
+ 
+
+ 
+记录时间：2016-04-04 00:24:29,590 
+线程ID:[1] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 00:25:03,656 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The status of index : True
+ 
+
+ 
+记录时间：2016-04-04 00:25:03,769 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Total number of task : 1
+ 
+
+ 
+记录时间：2016-04-04 00:25:05,017 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Index 22 has been writen to index library!
+ 
+
+ 
+记录时间：2016-04-04 00:25:05,144 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The index library has been closed!
+ 
+
+ 
+记录时间：2016-04-04 00:25:09,149 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The status of index : True
+ 
+
+ 
+记录时间：2016-04-04 00:25:09,156 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Total number of task : 1
+ 
+
+ 
+记录时间：2016-04-04 00:25:09,176 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Index 23 has been writen to index library!
+ 
+
+ 
+记录时间：2016-04-04 00:25:09,200 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The index library has been closed!
+ 
+
+ 
+记录时间：2016-04-04 00:25:27,203 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The status of index : True
+ 
+
+ 
+记录时间：2016-04-04 00:25:27,208 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Total number of task : 1
+ 
+
+ 
+记录时间：2016-04-04 00:25:27,221 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Index 24 has been writen to index library!
+ 
+
+ 
+记录时间：2016-04-04 00:25:27,238 
+线程ID:[8] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The index library has been closed!
+ 
+
+ 
+记录时间：2016-04-04 00:27:43,251 
+线程ID:[3] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 00:28:35,805 
+线程ID:[1] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 00:30:39,626 
+线程ID:[1] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 00:33:40,457 
+线程ID:[1] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 00:52:36,726 
+线程ID:[1] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 00:59:20,334 
+线程ID:[21] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 10:59:55,383 
+线程ID:[1] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 11:01:07,484 
+线程ID:[6] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The status of index : True
+ 
+
+ 
+记录时间：2016-04-04 11:01:07,598 
+线程ID:[6] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Total number of task : 1
+ 
+
+ 
+记录时间：2016-04-04 11:01:08,964 
+线程ID:[6] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Index 24 has been writen to index library!
+ 
+
+ 
+记录时间：2016-04-04 11:01:09,136 
+线程ID:[6] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The index library has been closed!
+ 
+
+ 
+记录时间：2016-04-04 11:31:46,388 
+线程ID:[1] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 11:36:37,238 
+线程ID:[1] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 12:48:12,739 
+线程ID:[32] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 13:07:31,078 
+线程ID:[1] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 13:09:58,289 
+线程ID:[41] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 13:15:15,230 
+线程ID:[41] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 13:16:29,179 
+线程ID:[1] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 13:17:54,927 
+线程ID:[1] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 13:18:31,257 
+线程ID:[1] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 13:20:39,430 
+线程ID:[1] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 13:23:05,043 
+线程ID:[1] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 13:27:45,255 
+线程ID:[1] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 13:38:52,427 
+线程ID:[1] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 13:40:39,469 
+线程ID:[1] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 13:53:21,981 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The status of index : True
+ 
+
+ 
+记录时间：2016-04-04 13:53:22,034 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Total number of task : 1
+ 
+
+ 
+记录时间：2016-04-04 13:53:22,118 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Index 4 has been writen to index library!
+ 
+
+ 
+记录时间：2016-04-04 13:53:22,259 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The index library has been closed!
+ 
+
+ 
+记录时间：2016-04-04 13:53:24,261 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The status of index : True
+ 
+
+ 
+记录时间：2016-04-04 13:53:24,274 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Total number of task : 1
+ 
+
+ 
+记录时间：2016-04-04 13:53:24,281 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Index 2 has been writen to index library!
+ 
+
+ 
+记录时间：2016-04-04 13:53:24,303 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The index library has been closed!
+ 
+
+ 
+记录时间：2016-04-04 13:53:28,304 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The status of index : True
+ 
+
+ 
+记录时间：2016-04-04 13:53:28,309 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Total number of task : 1
+ 
+
+ 
+记录时间：2016-04-04 13:53:28,315 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Index 1 has been writen to index library!
+ 
+
+ 
+记录时间：2016-04-04 13:53:28,420 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The index library has been closed!
+ 
+
+ 
+记录时间：2016-04-04 13:53:30,421 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The status of index : True
+ 
+
+ 
+记录时间：2016-04-04 13:53:30,434 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Total number of task : 1
+ 
+
+ 
+记录时间：2016-04-04 13:53:30,443 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Index 6 has been writen to index library!
+ 
+
+ 
+记录时间：2016-04-04 13:53:30,498 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The index library has been closed!
+ 
+
+ 
+记录时间：2016-04-04 13:53:34,500 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The status of index : True
+ 
+
+ 
+记录时间：2016-04-04 13:53:34,517 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Total number of task : 1
+ 
+
+ 
+记录时间：2016-04-04 13:53:34,521 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Index 7 has been writen to index library!
+ 
+
+ 
+记录时间：2016-04-04 13:53:34,616 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The index library has been closed!
+ 
+
+ 
+记录时间：2016-04-04 13:53:36,617 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The status of index : True
+ 
+
+ 
+记录时间：2016-04-04 13:53:36,629 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Total number of task : 1
+ 
+
+ 
+记录时间：2016-04-04 13:53:36,635 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Index 8 has been writen to index library!
+ 
+
+ 
+记录时间：2016-04-04 13:53:36,682 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The index library has been closed!
+ 
+
+ 
+记录时间：2016-04-04 13:53:40,683 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The status of index : True
+ 
+
+ 
+记录时间：2016-04-04 13:53:40,697 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Total number of task : 1
+ 
+
+ 
+记录时间：2016-04-04 13:53:40,704 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Index 10 has been writen to index library!
+ 
+
+ 
+记录时间：2016-04-04 13:53:40,755 
+线程ID:[42] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The index library has been closed!
+ 
+
+ 
+记录时间：2016-04-04 19:29:22,118 
+线程ID:[1] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 19:36:40,118 
+线程ID:[22] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 19:38:42,191 
+线程ID:[21] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The status of index : True
+ 
+
+ 
+记录时间：2016-04-04 19:38:42,284 
+线程ID:[21] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Total number of task : 1
+ 
+
+ 
+记录时间：2016-04-04 19:38:42,367 
+线程ID:[21] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：Index 23 has been writen to index library!
+ 
+
+ 
+记录时间：2016-04-04 19:38:42,539 
+线程ID:[21] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：The index library has been closed!
+ 
+
+ 
+记录时间：2016-04-04 20:09:36,676 
+线程ID:[53] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 
+
+ 
+记录时间：2016-04-04 22:26:07,194 
+线程ID:[30] 
+日志级别：  DEBUG 
+出错类：EDC.SearchEngine.Web.Common.IndexManager property: [(null)] - 
+错误描述：IndexManager has been lunched successfully!
+ 

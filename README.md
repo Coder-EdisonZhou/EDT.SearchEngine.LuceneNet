@@ -12,19 +12,19 @@
 来看看本Demo的项目结构，虽然只是做一个小Demo，还是使用了简单地三层结构来进行开发：
 ![markdown](https://images2015.cnblogs.com/blog/381412/201604/381412-20160404201335375-1503290102.jpg)
 <br/>
-（1）Manulife.SearchEngine.Dao
+（1）EDC.SearchEngine.Dao
 
 　　顾名思义，数据访问层，与数据库进行交互，各种SQL！
 
-（2）Manulife.SearchEngine.Service
+（2）EDC.SearchEngine.Service
 
 　　业务逻辑层，对数据访问接口进行简单的封装，为UI层提供服务接口。
 
-（3）Manulife.SearchEngine.Model
+（3）EDC.SearchEngine.Model
 
 　　公共的实体对象，为各个层次提供Entity。
 
-（4）Manulife.SearchEngine.Web
+（4）EDC.SearchEngine.Web
 
 　　一个ASP.NET WebForm的网站，主要提供Admin管理操作（文章帖子的CRUD）以及站内搜索（我们的关注点就在这儿）。
 

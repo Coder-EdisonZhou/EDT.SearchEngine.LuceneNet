@@ -1,9 +1,0 @@
-E:\Project\dotNet Projects\Manulife.SearchEngine\Manulife.SearchEngine.Service\bin\Debug\Manulife.SearchEngine.Service.dll
-E:\Project\dotNet Projects\Manulife.SearchEngine\Manulife.SearchEngine.Service\bin\Debug\Manulife.SearchEngine.Service.pdb
-E:\Project\dotNet Projects\Manulife.SearchEngine\Manulife.SearchEngine.Service\bin\Debug\Manulife.SearchEngine.Dao.dll
-E:\Project\dotNet Projects\Manulife.SearchEngine\Manulife.SearchEngine.Service\bin\Debug\Manulife.SearchEngine.Model.dll
-E:\Project\dotNet Projects\Manulife.SearchEngine\Manulife.SearchEngine.Service\bin\Debug\Manulife.SearchEngine.Dao.pdb
-E:\Project\dotNet Projects\Manulife.SearchEngine\Manulife.SearchEngine.Service\bin\Debug\Manulife.SearchEngine.Model.pdb
-E:\Project\dotNet Projects\Manulife.SearchEngine\Manulife.SearchEngine.Service\obj\Debug\Manulife.SearchEngine.Service.csprojResolveAssemblyReference.cache
-E:\Project\dotNet Projects\Manulife.SearchEngine\Manulife.SearchEngine.Service\obj\Debug\Manulife.SearchEngine.Service.dll
-E:\Project\dotNet Projects\Manulife.SearchEngine\Manulife.SearchEngine.Service\obj\Debug\Manulife.SearchEngine.Service.pdb
